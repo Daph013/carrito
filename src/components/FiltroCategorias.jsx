@@ -21,7 +21,7 @@ const FiltroCategorias = () => {
   return (
     <>
         {datos && datos.map((item, index)=>(
-            <li key={item.index}><Link to={`/categorias/${item.id}`} className="dropdown-item" href="#">{item.name}</Link></li>
+            <li key={item}><Link to={`/categorias/${item.id}`} className="dropdown-item" href="#">{item.name}</Link></li>
         
         ))}
     </>
